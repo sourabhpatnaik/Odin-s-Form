@@ -55,7 +55,13 @@
             <div class="formElement">
               <div class="inputContainer">
                 <label for="password">Password</label><br />
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="3"
+                  maxlength="20"
+                />
               </div>
 
               <div class="inputContainer">
@@ -64,6 +70,8 @@
                   type="password"
                   name="confirmPassword"
                   id="confirmPassword"
+                  minlength="3"
+                  maxlength="20"
                 />
               </div>
             </div>

@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Slackey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dekko&family=Road+Rage&family=Slackey&display=swap");
+
 body {
   margin: 0;
   padding: 0;
 }
+
 .slackey-regular {
   font-family: "Slackey", sans-serif;
   font-weight: 400;
@@ -15,16 +17,18 @@ body {
   height: 100vh;
 }
 
+/* CSS FOR LEFT SIDE */
 .left-side {
-  background-image: url("./Resources/dogBackground.webp");
+  background-image: url("https://images.unsplash.com/photo-1504430225224-21a649ac91bc?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   width: 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .logoContainer {
   display: flex;
-  margin: 8rem auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  margin: 7.4rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -37,12 +41,17 @@ body {
   width: 150px;
   height: 150px;
 }
+/* CSS FOR RIGHT SIDE  */
 .right-side {
   width: 70%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: aliceblue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("./Resources/rightBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #pText {
@@ -52,8 +61,75 @@ body {
   padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 200px;
+  color: white;
 }
 
 .form-container {
-  background-color: white;
+  background-color: rgb(255, 253, 201);
+  padding-left: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+form > h1 {
+  font-size: 22px;
+  font-family: "Slackey";
+  color: #651e40;
+}
+
+label {
+  font-family: "Dekko";
+  font-size: 18px;
+  color: #651e40;
+}
+
+.formElement {
+  display: flex;
+  gap: 5rem;
+}
+
+input {
+  padding: 8px 50px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #96295e;
+  border: 2px solid rgb(228, 228, 228);
+  outline: none;
+}
+
+input:focus {
+  border-color: lightskyblue;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+/*CSS FOR BUTTON*/
+#submit {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #651e40;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: #96295e;
+}
+
+#linkAsk {
+  margin-left: 50px;
+  color: white;
+}
+#linkAsk > a {
+  color: #651e40;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Slackey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dekko&family=Road+Rage&family=Slackey&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  background-image: url("./Resources/dogBackground.webp");
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logoContainer {
+  display: flex;
+  margin: 8rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer > h1 {
+  color: #cee205;
+}
+
+#dogLogo {
+  width: 150px;
+  height: 150px;
+}
+.right-side {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+#pText {
+  font-family: "Slackey";
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 200px;
+}
+
+.form-container {
+  background-color: white;
+}

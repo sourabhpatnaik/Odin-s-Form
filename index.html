@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Registration Form</title>
 </head>
+
 <body>
 
-    
+    <div class="container">
+        <div class="left-side">
+            <div class="logoContainer">
+                <img src="./Resources/Dog_Logo.png" alt="dogLogo" id="dogLogo">
+                <h1>THE DOGGOS</h1>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <p id="pText">Fill out this Dog Adoption Registration Form to provide us with details about your home,
+                lifestyle, and
+                experience with pets. This helps us match you with the perfect furry companion. Let's find your new best
+                friend today!</p>
+
+            <div class="form-container">
+                <form action="#">
+                    <h1>Adoption Form</h1>
+
+                    <div>
+                        <label for="fName">First Name</label>
+                        <input type="text" name="fName" id="fName">
+
+                        <label for="lName">Last Name</label>
+                        <input type="text" name="lName" id="lName">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="pNumber">Phone Number</label>
+                        <input type="number" name="pNumber" id="pNumber">
+                    </div>
+
+                    <div>
+                        <label for="passwordField">Password</label>
+                        <input type="password" name="passwordField" id="passwordField">
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </form>
+
+
+            </div>
+            <button id="submit">Submit</button>
+
+            <p>Already have an Account? <a href="#">Log In</a></p>
+        </div>
+
+    </div>
 
 
 
 
 
- <script src="./Js/script.js"></script>   
+
+    <script src="./Js/script.js"></script>
 </body>
+
 </html>
